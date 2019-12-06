@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[1]:
 
 
 #pybank
@@ -67,11 +67,13 @@ output = (
         f"Greatest Decrease in Profits: {greatest_decrease[0]} (${greatest_decrease[1]})\n"
 )
 
-
 #output the results in the txt file
-output_pybank = os.path.join("Fin_Analysis_Results.csv")
+output_pybank = os.path.join("Fin_Analysis_Results.txt")
 with open (output_pybank, "w") as txt_file:
     txt_file.write(output)
+
+# print results in terminal
+print(output)
 
 
 # In[ ]:
