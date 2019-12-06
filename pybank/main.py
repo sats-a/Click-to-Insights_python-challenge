@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[8]:
+# In[4]:
 
 
 #pybank
@@ -28,10 +28,8 @@ with open(pybank_csv, newline="") as csvfile:
     
 
 #Skip the header
-    csv_header = next(csvreader)
-    
-#     pre_net = int(row[1])
-#    print(pre_net)
+    csv_header = next(csvreader)    
+
 #create a for loop to loop through the data and count the periods &  calculate required results
     for row in csvreader:
             # Count the number of rows
@@ -70,8 +68,6 @@ output = (
 )
 
 
-
-# print(output)
 #output the results in the txt file
 output_pybank = os.path.join("Fin_Analysis_Results.csv")
 with open (output_pybank, "w") as txt_file:
